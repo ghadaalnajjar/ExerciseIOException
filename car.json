@@ -1,0 +1,13 @@
+[ {
+  "carId" : "81eb06ed-f606-45f2-9995-9c608bec8bc3",
+  "regNumber" : "ABC123",
+  "brand" : "Volvo",
+  "model" : "S60",
+  "regDate" : "2010-03-25"
+}, {
+  "carId" : "81f9f3a2-c06f-43fd-b43f-b7565750cd2d",
+  "regNumber" : "DEF456",
+  "brand" : "BMW",
+  "model" : "530",
+  "regDate" : "2007-10-13"
+} ]
