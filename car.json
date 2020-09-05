@@ -1,13 +1,23 @@
 [ {
-  "carId" : "81eb06ed-f606-45f2-9995-9c608bec8bc3",
-  "regNumber" : "ABC123",
-  "brand" : "Volvo",
-  "model" : "S60",
-  "regDate" : "2010-03-25"
+  "carId" : "9990bdd4-76da-4d7d-b46a-37f0f8232ebd",
+  "regNumber" : "AB123",
+  "model" : "C60",
+  "regDate" : "2020-12-25",
+  "owner" : {
+    "ownerId" : 1,
+    "name" : "Omar",
+    "birthDate" : "2000-01-01"
+  },
+  "nameBrand" : "Toyota"
 }, {
-  "carId" : "81f9f3a2-c06f-43fd-b43f-b7565750cd2d",
-  "regNumber" : "DEF456",
-  "brand" : "BMW",
-  "model" : "530",
-  "regDate" : "2007-10-13"
+  "carId" : "3467704d-e3d9-4330-baf6-0f2116e33b2c",
+  "regNumber" : "DF456",
+  "model" : "330",
+  "regDate" : "2017-01-13",
+  "owner" : {
+    "ownerId" : 1,
+    "name" : "Omar",
+    "birthDate" : "2000-01-01"
+  },
+  "nameBrand" : "SAB"
 } ]

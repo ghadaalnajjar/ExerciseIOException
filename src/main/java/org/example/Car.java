@@ -9,20 +9,22 @@ import java.util.UUID;
 public class Car implements Serializable {
     private UUID carId;
     private String regNumber;
-    private String brand;
+    private String NameBrand;
     private String model;
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private LocalDate regDate;
+    private Owner owner;
 
     public Car() {
     }
 
-    public Car(String regNumber, String brand, String model, LocalDate regDate) {
+    public Car(String regNumber, String nameBrand, String model, LocalDate regDate, Owner owner) {
         this.carId = UUID.randomUUID();
         this.regNumber = regNumber;
-        this.brand = brand;
+        this.NameBrand = nameBrand;
         this.model = model;
         this.regDate = regDate;
+        this.owner = owner;
     }
 
     public UUID getCarId() {
@@ -41,12 +43,12 @@ public class Car implements Serializable {
         this.regNumber = regNumber;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getNameBrand() {
+        return NameBrand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setNameBrand(String nameBrand) {
+        NameBrand = nameBrand;
     }
 
     public String getModel() {
@@ -65,12 +67,20 @@ public class Car implements Serializable {
         this.regDate = regDate;
     }
 
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Car{");
         sb.append("carId=").append(carId);
         sb.append(", regNumber='").append(regNumber).append('\'');
-        sb.append(", brand='").append(brand).append('\'');
+        sb.append(", nameBrand='").append(NameBrand).append('\'');
         sb.append(", model='").append(model).append('\'');
         sb.append(", regDate=").append(regDate);
         sb.append('}');
